@@ -17,6 +17,7 @@ A social media web app. My goal is to create a minimalistic project for my portf
 ## Techstack
 
 - **React (TypeScript)** - frontend
+- **Storybook** - UI component documentation
 - **NextJS** - SSR, routing
 - **Redux Toolkit** - state management
 - **OAuth** - authorization
