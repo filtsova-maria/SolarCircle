@@ -1,6 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/*"], // TODO: replace with component and page folders later on
+  content: [
+    './src/**/*'
+  ],
   theme: {
     screens: {
       sm: '480px',
