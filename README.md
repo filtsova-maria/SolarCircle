@@ -1,6 +1,6 @@
 # SolarCircle
 
-A social media web app. My goal is to create a minimalistic project for my portfolio that shows UI/UX, Frontend, and Backend knowledge.
+A social media web app. My goal is to create a minimalistic project for my portfolio that shows UI/UX, Frontend, and Backend knowledge. See [the development logs](../../wiki/Development-logs) for progress.
 
 ## Goals
 
