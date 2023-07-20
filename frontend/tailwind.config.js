@@ -10,9 +10,13 @@ module.exports = {
       lg: '976px',
       xl: '1440px',
     },
+    fontFamily: {
+      default: 'Ubuntu, sans-serif',
+      title: 'Rubik, sans-serif',
+    },
     colors: {
-      primary: "#F4B746",
-      secondary: "#F8D626",
+      main: "#F4B746",
+      primary: "#F8D626",
       accent: "#72ACEC",
       black: "#000000",
       white: "#FFFFFF",

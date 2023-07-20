@@ -1,3 +1,52 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    body {
+        font-size: 16px;
+        text-align: center;
+        @apply text-text font-default;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        @apply font-title;
+    }
+    h1 {
+        font-size: 120px;
+    }
+    h2 {
+        font-size: 100px;
+    }
+    h3 {
+        font-size: 90px;
+    }
+    h4 {
+        font-size: 75px;
+    }
+    h5 {
+        font-size: 60px;
+    }
+    h6 {
+        font-size: 48px;
+    }
+    button {
+        text-transform: uppercase;
+        padding: 4px;
+        border-radius: 4px;
+        box-shadow: inset 0px -4px 0px rgba(0,0,10,0.1);
+        transition: all 150ms;
+    }
+    button:hover {
+        box-shadow: inset 0px 4px 0px rgba(0,0,10,0.1);
+        filter: saturate(10%);
+        margin: 1px;
+        transition: all 150ms;
+    }
+}
+
+@layer components {
+    .btn-primary {
+        @apply bg-primary;
+    }
+}
+
