@@ -1,4 +1,5 @@
 import "./globals.css";
+import { Header } from "../components";
 
 export default function RootLayout({
   children,
@@ -14,7 +15,10 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet" />
       </head>
       <title>Solar Circle</title>
-      <body className="bg-background">{children}</body>
+      <body className="bg-background">
+        <Header />
+        {children}
+      </body>
     </html>
   )
 }
