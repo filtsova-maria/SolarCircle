@@ -1,5 +1,25 @@
-import "./globals.css";
 import { Header } from "../components";
+import { Metadata } from "next";
+import { Rubik, Ubuntu } from "next/font/google";
+import "../styles/global.css";
+
+const rubik = Rubik({
+  variable: '--font-rubik',
+  subsets: ['latin'],
+  display: "swap",
+});
+
+const ubuntu = Ubuntu({
+  weight: "400",
+  variable: '--font-ubuntu',
+  subsets: ['latin'],
+  display: "swap",
+});
+
+export const metadata: Metadata = {
+  title: 'Solar Circle',
+  description: 'Main news feed'
+}
 
 export default function RootLayout({
   children,
@@ -7,14 +27,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet" />
-      </head>
-      <title>Solar Circle</title>
+    <html lang="en" className={`${rubik.variable} ${ubuntu.variable}`}>
       <body className="bg-background">
         <Header />
         {children}
