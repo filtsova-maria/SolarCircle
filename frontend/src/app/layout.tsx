@@ -1,7 +1,7 @@
-import { Header } from "../components";
+import { Header } from "components";
 import { Metadata } from "next";
 import { Rubik, Ubuntu } from "next/font/google";
-import "../styles/global.css";
+import "styles/global.css";
 
 const rubik = Rubik({
   variable: '--font-rubik',
