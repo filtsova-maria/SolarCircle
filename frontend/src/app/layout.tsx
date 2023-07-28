@@ -1,4 +1,3 @@
-import { Header } from "components";
 import { Metadata } from "next";
 import { Rubik, Ubuntu } from "next/font/google";
 import "styles/global.css";
@@ -28,8 +27,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${rubik.variable} ${ubuntu.variable}`}>
-      <body className="bg-background">
-        <Header />
+      <body>
         {children}
       </body>
     </html>

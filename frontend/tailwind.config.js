@@ -37,7 +37,10 @@ module.exports = {
         dark: "#747474",
       }
     },
-    extend: {},
+    extend: {
+      spacing: {
+      }
+    },
   },
   plugins: [],
 }
