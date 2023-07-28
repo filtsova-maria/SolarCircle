@@ -1,3 +1,6 @@
+import { faSignIn } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Input } from 'components';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
@@ -11,21 +14,21 @@ export default function Page() {
                 Looks like you are not signed in!
             </div>
             <form className='my-3 flex flex-col gap-2'>
-                <div className='flex items-center'>
-                    <label htmlFor='login' className='px-2 text-right table-cell text-grey-mid w-24'>Login</label>
-                    <input id="login" className='border border-grey-mid rounded table-cell h-8 flex-0' />
-                </div>
-                <div className='flex items-center'>
-                    <label htmlFor='password' className='px-2 text-right table-cell text-grey-mid w-24'>Password</label>
-                    <input id="password" type='password' className='border border-grey-mid rounded table-cell h-8 flex-0' />
-                </div>
+                <Input label="Login" id="login" type='text' />
+                <Input label="Password" id="password" type='password' />
             </form>
             <div className='flex justify-around items-center'>
                 <caption>
                     Do not have an account? <br />
                     <Link href="/">Register</Link>
                 </caption>
-                <Link href="/"><button className='btn-primary'>{"Sign in >"}</button></Link>
+                <Link href="/"><button className='btn-primary'>
+                    Sign in
+                    <FontAwesomeIcon
+                        icon={faSignIn}
+                        className='font-default text-white pl-1'
+                    />
+                </button></Link>
             </div>
         </div>
     );
